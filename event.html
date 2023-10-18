@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event.css">
+    <title>Skapa Event</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="#"></a>
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="details.html">Detaljsida</a></li>
+            <li><a href="event.html">Skapa event</a></li>
+            <li><a href="about-us.html">Om oss</a></li>
+        </ul>
+    </nav>
+    <div class="event-form">
+        <h1>Skapa Event</h1>
+        <form>
+            <label for="event-name">Namn på event</label>
+            <input type="text" id="event-name" name="event-name" required>
+            
+            <label for="event-date">Datum</label>
+            <input type="date" id="event-date" name="event-date" required>
+
+            <label for="event-description">Kort beskrivning</label>
+            <textarea id="event-description" name="event-description" rows="4" required></textarea>
+
+            <label for="event-agenda">Agenda</label>
+            <textarea id="event-agenda" name="event-agenda" rows="4" required></textarea>
+
+            <label for="event-images">Ladda upp 4 bilder</label>
+            <input type="file" id="event-images" name="event-images[]" accept="image/*" multiple required>
+
+            <label for="event-category">Val av kategori</label>
+            <select id="event-category" name="event-category" required>
+                <option value="nöje">Nöje</option>
+                <option value="utbildning">Utbildning</option>
+                <option value="afterwork">Afterwork</option>
+            </select>
+
+            <button type="submit">Skapa Event</button>
+        </form>
+    </div>
+</body>
+</html>
