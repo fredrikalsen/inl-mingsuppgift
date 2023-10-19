@@ -64,7 +64,7 @@ body, ul {
   flex-wrap: wrap;
   width: 100%;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 .image .image-item {
   width: calc(33.33% - 20px);
@@ -125,7 +125,7 @@ body, ul {
     align-items: center;
     width: 30%;
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 70px;
   }
   .image-item {
     width: calc(33.33% - 20px);
@@ -136,45 +136,10 @@ body, ul {
     justify-content: center;
     align-items: center;
   }
-  .image-item .image-container {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    max-height: 600px;
-    width: 300px;
-  }
-  .image-item .image-container:hover {
-    transform: scale(1.05);
-  }
-  .image-item .image-container .image-button {
-    background-color: rgb(21, 30, 78);
-    color: #fff;
-    padding: 3px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 10px;
-    width: 200px;
-    border: none;
-  }
-  .image-item .image-container .image-button:hover {
-    transform: scale(1.08);
-  }
-  .image-item .image-container img {
-    max-width: 100%;
-    width: 100%;
-    max-height: 180px;
-    height: auto;
-    border-radius: 0%;
-    margin: auto;
-  }
-  .image-item .image-container p {
-    margin-top: 10px;
-    font-size: 15px;
-    line-height: 1.5;
-    color: #333;
-  }
-  .image-item .image-container a {
-    display: block;
-    margin-top: 10px;
+}
+@media (min-height: 920px) {
+  .image-content {
+    margin-top: 160px;
   }
 }
 
