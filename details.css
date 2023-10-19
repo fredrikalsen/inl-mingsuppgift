@@ -11,8 +11,15 @@ h1 {
   color: rgb(21, 30, 78);
 }
 
+.date {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(21, 30, 78);
+}
+
 p {
   margin-left: 200px;
+  font-size: 17px;
 }
 
 .image-content {
@@ -28,7 +35,7 @@ p {
   width: 50%;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 200px;
+  margin-top: 340px;
 }
 .image-content .image-item img {
   max-width: 200px;
@@ -102,6 +109,49 @@ p {
 .navbar-menu li a:hover {
   color: rgb(166, 179, 255);
   font-size: 16px;
+}
+
+@media (max-width: 920px) {
+  h1 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 36px;
+  }
+  p {
+    margin-left: 0;
+    text-align: center;
+  }
+  .image-content {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 300px;
+  }
+  .image-content .image-item {
+    width: 200px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .image-content .image-item img {
+    max-width: 300px;
+    width: 80%;
+    height: 80%;
+  }
+  .book-button {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .line {
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
 }
 
 /*# sourceMappingURL=details.css.map */
